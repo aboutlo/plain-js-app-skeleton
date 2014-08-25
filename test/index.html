@@ -16,6 +16,8 @@
         var expect = chai.expect;
         var should = chai.should();
     </script>
+    <script src="bower_components/sinon-chai/lib/sinon-chai.js"></script>
+    <script src="bower_components/sinonjs/sinon.js"></script>
 
     <!-- include source files here... -->
     <script src="../app/scripts/namepace.js"></script>
@@ -24,6 +26,7 @@
 
     <!-- include spec files here... -->
     <script src="spec/my_app_spec.js"></script>
+    <script src="spec/utils_spec.js"></script>
 
     <script>
       if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
