@@ -41,7 +41,7 @@ So now you are ready to run the app.
 $ gulp serve
 ```
 
-or the tests via command line:
+or the tests via command line using mocha and phantomjs:
 
 ```
 $ gulp test
@@ -52,6 +52,8 @@ or directly on your browser
 ```
 $ open spec/index.html
 ```
+
+notice: I'm using mocha with chai.js. You can use assert, expect and should style out of the box. 
 
 To build the application just execute
 
@@ -64,4 +66,5 @@ A dist directory with all minified objects will be created. Deploy it where ever
 # How to add classes or tests
 
 It's pretty simple. Just add the classes in *app/scripts* (one for file) and tests in *test/spec*
+Then you have to add them to *app/index.html* and test/index.html 
 
