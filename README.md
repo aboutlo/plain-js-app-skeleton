@@ -11,18 +11,25 @@ So I created this boilerplate project with the aim of provide a basic template w
 
 System
 
-- homebrew *Package Manager. Allows to install, remove and updated applications and packages.* <http://brew.sh>
-- phantomjs *a headless WebKit scriptable with a JavaScript API.* 
+- Homebrew *Package Manager. Allows to install, remove and updated applications and packages.* <http://brew.sh>
+- Phantomjs *a headless WebKit scriptable with a JavaScript API.* 
 
 App
 
-- npm *Node Packaged Modules* <https://www.npmjs.org/>
-- bower *A package manager for the web* <http://bower.io>
-- gulp *The streaming build system* <http://gulpjs.com>
+- NPM *Node Packaged Modules* <https://www.npmjs.org/>
+- Bower *A package manager for the web* <http://bower.io>
+- Gulp *The streaming build system* <http://gulpjs.com>
+
+Test
+
+- Mocha *javaScript test framework running on node.js and the browser* <http://visionmedia.github.io/mocha/>
+- Chai  *a BDD / TDD assertion library* <http://chaijs.com/>
+- Sinon *standalone test spies, stubs and mocks for JavaScript* <http://http://sinonjs.org/>
+- Sinon-chai *custom assertions for using Sinon with the Chai assertion library* <https://github.com/domenic/sinon-chai>
 
 # getting started
 
-Just clone the repo where ever you need. 
+Just clone this repo where ever you need. 
 
 ```
 git clone git@github.com:aboutlo/plain-js-app-skeleton.git
@@ -86,6 +93,8 @@ ex. test/index/html
   <!-- include spec files here... -->
   <script src="spec/my_app_spec.js"></script>
 ```
+
+We added *sinonjs* and *sinon-chai* to spy, stup and mock your classes using mocha and expect style. 
 
 
 
