@@ -133,8 +133,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
 });
 
 gulp.task('test', function () {
-  var mochaPhantomJS = require('gulp-mocha-phantomjs');
   return gulp
       .src('test/index.html')
-      .pipe(mochaPhantomJS());
+      .pipe($.mochaPhantomjs());
 });
