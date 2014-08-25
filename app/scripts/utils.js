@@ -5,7 +5,7 @@
   app.Utils = {
 
     log:function(log){
-      console.log('debug::' + log);
+      console.log('debug:' + log);
     }
 
   };
