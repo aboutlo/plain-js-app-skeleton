@@ -32,7 +32,7 @@ Test
 Just clone this repo where ever you need. 
 
 ```
-git clone git@github.com:aboutlo/plain-js-app-skeleton.git
+git clone git@github.com:aboutlo/plain-js-app-skeleton.git YOUR_APPLICATION_NAME
 ```
 
 Then you have to get all the dependencies via npm
@@ -40,7 +40,23 @@ Then you have to get all the dependencies via npm
 ```
 $ cd plain-js-app-skeleton
 $ npm install
+
 ```
+
+Replace all plain-js-app-skeleton with YOUR_APPLICATION_NAME
+
+```
+$ sed -i '' 's/plain-js-app-skeleton/your_application_name/g' *.json
+$ sed -i '' 's/plain-js-app-skeleton/your_application_name/g' test/bower.json 
+```
+
+Then you can require all test js dependencies. Notice: There isn't js lib required to the project. 
+
+```
+$ cd test
+$ bower install 
+```
+
 
 So now you are ready to run the app. 
  
