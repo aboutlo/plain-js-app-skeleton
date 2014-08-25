@@ -1,11 +1,11 @@
 # README
 
 Find a proper way to create a plain javascript project using modern tool hasn't been so easy. 
-So I created this boilerplate project with the aim of provide a basic a template with:
+So I created this boilerplate project with the aim of provide a basic template with:
  
 - directory layout
 - a couple of classes
-- a testing env properly configured
+- a testing env properly configured with mocha, chai, and sinonjs running on phantomjs as well your browser
 
 # requirements
 
@@ -41,7 +41,14 @@ So now you are ready to run the app.
 $ gulp serve
 ```
 
-or the tests via command line using mocha and phantomjs:
+Before running the test you have to install JS dependencies via bower
+
+```
+$ cd test
+$ bower install
+```
+
+Now you can run tests via command line using mocha and phantomjs:
 
 ```
 $ gulp test
@@ -66,5 +73,19 @@ A dist directory with all minified objects will be created. Deploy it where ever
 # How to add classes or tests
 
 It's pretty simple. Just add the classes in *app/scripts* (one for file) and tests in *test/spec*
-Then you have to add them to *app/index.html* and test/index.html 
+Then you have to add them to *app/index.html* and test/index.html. Pay attention, order them with the proper priority.
+  
+ex. test/index/html
+
+```
+  <!-- include source files here... -->
+  <script src="../app/scripts/namepace.js"></script>
+  <script src="../app/scripts/utils.js"></script>
+  <script src="../app/scripts/my_app.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="spec/my_app_spec.js"></script>
+```
+
+
 
