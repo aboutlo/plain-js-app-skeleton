@@ -22,7 +22,7 @@ App
 
 Test
 
-- Mocha *javaScript test framework running on node.js and the browser* <http://visionmedia.github.io/mocha/>
+- Mocha *javaScript test framework running on node.js and the browser* <http://mochajs.org/>
 - Chai  *a BDD / TDD assertion library* <http://chaijs.com/>
 - Sinon *standalone test spies, stubs and mocks for JavaScript* <http://http://sinonjs.org/>
 - Sinon-chai *custom assertions for using Sinon with the Chai assertion library* <https://github.com/domenic/sinon-chai>
